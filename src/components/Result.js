@@ -5,7 +5,11 @@ const Result = props => {
 
   const { date, city, sunrise, sunset, temp, pressure, wind, err } = props.weather;
   
-  let content = null;
+  let content = <>
+    <div className="result-container">
+    <h2>Find your city and check the weather.</h2>
+    </div>
+    </>;
 
   if(!err && city) {
 

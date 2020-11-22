@@ -25,8 +25,45 @@ class App extends Component {
     })
   }
 
-  handleCitySubmit = e => {
-    e.preventDefault()
+  // handleCitySubmit = e => {
+  //   e.preventDefault()
+  //   const API = 
+  //   `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=${APIKey}&units=metric`;
+
+  //   fetch(API)
+  //   .then(res => {
+  //     if(res.ok){
+  //       return res
+  //     }
+  //     throw Error("failed to get data")
+  //   })
+  //   .then(res => res.json())
+  //   .then(data => {
+  //     const time = new Date().toLocaleDateString()
+  //     this.setState(prevState => ({
+  //       err: false,
+  //       date: time,
+  //       sunrise: data.sys.sunrise,
+  //       sunset: data.sys.sunset,
+  //       temp: data.main.temp,
+  //       pressure: data.main.pressure,
+  //       wind: data.wind.speed,
+  //       city: prevState.value,
+  //     }))
+  //   })
+  //   .catch(err => {
+  //     console.log(err)
+  //     this.setState(prevState => ({
+  //       err: true,
+  //       city: prevState.value
+  //     }))
+  //   })
+  // }
+
+  componentDidUpdate(prevProps, prevState){
+    // console.log('aktualna wartosc ' + prevState.value)
+    if(this.state.value.length === 0) return
+    if(prevState.value !== this.state.value) {
     const API = 
     `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&appid=${APIKey}&units=metric`;
 
@@ -58,19 +95,21 @@ class App extends Component {
         city: prevState.value
       }))
     })
-
-
+    }
   }
 
   render() {
     return (
       <div className="App">
-        Weather App
+        <div className="header-container">
+          <h1>Weather App</h1>
+        </div>
+        <div className="searchBox-container">
         <Form 
         value={this.state.value} 
         change={this.handleInputChange}
-        submit={this.handleCitySubmit}
         />
+        </div>
         <Result weather={this.state}/>
       </div>
     );
