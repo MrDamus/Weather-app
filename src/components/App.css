@@ -1,3 +1,16 @@
 .App {
   text-align: center;
 }
+
+.App input, .App button {
+  margin: 20px;
+  padding: 10px 20px;
+  border: 2px solid gray;
+  background-color: honeydew;
+}
+
+.App button:hover {
+  background-color: #222222;
+  color: honeydew;
+  border-color: #222;
+}

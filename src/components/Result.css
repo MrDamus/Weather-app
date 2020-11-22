@@ -1,0 +1,11 @@
+.result {
+  padding-top: 20px;
+}
+
+.result h3, .result h4 {
+  font-weight: normal;
+}
+
+.result em {
+  font-weight: bold;
+}
