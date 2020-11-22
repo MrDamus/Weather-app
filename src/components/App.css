@@ -14,3 +14,28 @@
   color: honeydew;
   border-color: #222;
 }
+
+.header-container {
+  border: 1px solid #fdf5fc;
+  border-radius: 5px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 160%;
+  background-color: rgba(253,245,252,0.2);
+  -webkit-box-shadow: 10px 15px 15px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 15px 15px 5px rgba(0,0,0,0.75);
+  box-shadow: 10px 15px 15px 5px rgba(0,0,0,0.75);
+}
+
+.searchBox-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0 20px 0;
+}
+
+.searchBox-container input{
+border-radius: 10px;
+}
