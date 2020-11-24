@@ -17,27 +17,31 @@ const Result = props => {
     const sunsetTime = new Date(sunset * 1000).toLocaleTimeString();
     content = (
     <>
+    <div className="result-header">
       <h3>
-      Searching for city <em>{city}</em>
+      <em>{city}</em>
       </h3>
       <h4>
-        Date and time: {date}
+        {date}
       </h4>
-      <h4>
-        Actual temp: {temp} &#176;C
-      </h4>
-      <h4>
-        Sunrise at: {sunriseTime}
-      </h4>
-      <h4>
-        Sunset at: {sunsetTime}
-      </h4>
-      <h4>
-        Pressure: {pressure} hPa
-      </h4>
-      <h4>
-        Wind speed: {wind} m/s
-      </h4>
+    </div>
+    <div className="temp-details">
+      <div className="details-box"><i className="fas fa-thermometer-half"></i>{temp} &#176;C</div>
+    </div>
+    <div className="other-details">
+      <div className="details-box">
+        <i className="fas fa-sort-up"></i><i className="fas fa-sun"></i> {sunriseTime}
+      </div>
+      <div className="details-box">
+        <i className="fas fa-sort-down"></i><i className="fas fa-sun"></i> {sunsetTime}
+      </div>
+      <div className="details-box">
+        <i className="fab fa-cloudscale"></i>{pressure} hPa
+      </div>
+      <div className="details-box">
+        <i className="fas fa-wind"></i>{wind} m/s
+      </div>
+    </div>
     </>
     )
   }
