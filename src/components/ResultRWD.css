@@ -1,0 +1,142 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .result-container {
+      width: 95%;
+  }
+  .result-box {
+      width: 70%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .result-container {
+      padding-top: 20px;
+  }
+  .result-box {
+      width: 85%;
+      border-width: 2px;
+  }
+  .temp-box {
+      flex-basis: 40%;
+      padding-left: 12px;
+  }
+  
+  .other-details {
+      flex-basis: 60%;
+  }
+  .temp-detail {
+      height: 70px;
+      width: 70px;
+      font-size: 40px;
+      padding-top: 10px;
+  }
+  .suntime {
+      font-size: 22px;
+      padding-bottom: 5px;
+  }
+} 
+@media (max-width: 767px) {
+  .result-container {
+      padding-top: 20px;
+  }
+  .result-box {
+      width: 95%;
+      border-width: 2px;
+  }
+  .temp-box {
+      flex-basis: 40%;
+      padding-left: 5px;
+  }
+  
+  .other-details {
+      flex-basis: 60%;
+  }
+  .temp-detail {
+      height: 65px;
+      width: 65px;
+      font-size: 38px;
+      padding: 8px;
+  }
+  .suntime {
+      font-size: 18px;
+      padding-bottom: 5px;
+  }
+  .other-details-container {
+      padding: 8px;
+      font-size: 18px;
+  }
+} 
+
+@media (max-width: 703px) {
+ 
+}
+
+@media (max-width: 639px) {
+  .temp-box {
+    justify-content: center;
+  }
+  .weather-details-container {
+    display: block;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  .result-container {
+      width: 85%;
+  }
+  .weather-detail-box {
+      flex-basis: 100%;
+  }
+  .other-details {
+      border-top: 1px solid #fdf5fc;
+      border-left: 0;
+  }
+  .temp-box {
+      justify-content: center;
+      padding-left: 0;
+      padding: 15px;
+  }
+  .result-header {
+      font-size: 22px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+  }
+  .weather-detail-box {
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .result-container {
+      width: 95%;
+  }
+  .weather-detail-box {
+      flex-basis: 100%;
+  }
+  .other-details {
+      border-top: 1px solid #fdf5fc;
+      border-left: 0;
+  }
+  .temp-box {
+      justify-content: center;
+      padding-left: 0;
+      padding: 10px;
+  }
+  .result-header {
+      font-size: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+  }
+  .weather-detail-box {
+      text-align: center;
+      padding: 8px;
+      font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .temp-detail {
+    font-size: 25px;
+  }
+}

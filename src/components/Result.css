@@ -1,4 +1,8 @@
-.result {
+* {
+  box-sizing: border-box;
+}
+
+.result-container{
   padding: 20px;
 }
 
@@ -8,4 +12,83 @@
 
 .result em {
   font-weight: bold;
+}
+
+.result-box {
+  border: 3px solid #fdf5fc;
+  border-radius: 5px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-shadow: 10px 15px 15px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 15px 15px 5px rgba(0,0,0,0.75);
+  box-shadow: 10px 15px 15px 5px rgba(0,0,0,0.75);
+
+}
+
+.result-header {
+  border-bottom: 1px solid #fdf5fc;
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 100%;
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.weather-details-container {
+  display: flex;
+  width: 100%;
+}
+
+.temp-box {
+  flex-basis: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.temp-icon {
+  border: 2px solid #fdf5fc;
+  border-radius: 50%;
+  text-align: center;
+  height: 75px;
+  width: 75px;
+  font-size: 48px;
+  padding: 10px;
+}
+
+.temp-detail {
+  font-size: 40px;
+  flex-basis: 65%;
+}
+
+.other-details {
+  flex-basis: 60%;
+  border-left: 2px solid #fdf5fc;
+  padding: 10px;
+}
+
+.suntime {
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+  border-bottom: 1px solid #fdf5fc;
+  padding-bottom: 10px;
+}
+
+.details-box {
+  flex-basis: 50%;
+  padding-top: 10px;
+}
+
+.other-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  font-size: 25px;
+  padding: 10px;
 }
