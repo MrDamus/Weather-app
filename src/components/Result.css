@@ -35,7 +35,7 @@
   display: flex;
   justify-content: space-around;
   flex-basis: 100%;
-  font-size: 26px;
+  font-size: 35px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -59,6 +59,7 @@
   width: 75px;
   font-size: 48px;
   padding: 10px;
+  margin-left: auto;
 }
 
 .temp-detail {
